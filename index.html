@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>portfoilo web</title>
+    <link rel="stylesheet" type="text/css"href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://tenor.com/en-GB/view/panda-office-pissed-tantrum-mad-gif-5146825" class="logo">click</a>
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <h2 id="text">Atraya Datta</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="shootingstars.png" id="shstars">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Me</h2>
+        <p>Atraya Datta, a CSE AIML 2nd year student, I am  enthusiastic about tech and designing so I started to learn creating webpage and UI/UX designing . Besides coding, I also like playing guitar and hold a keen interest in music and painting.<br>In my leisure I usually like to go out on trips and ride my bike, but coding works too ig... and sometimes when i'm out of options on what to do next I play the guitar and cover music videos(sometimes). <br> I look forward to creating websites that are futuristic and have a user friendly interface to help industries and kindle new ideas.
+        </p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let shstars = document.getElementById('shstars');
+        window.addEventListener('scroll', function(){
+            let value=window.scrollY;
+            stars.style.left=value*0.25 +'px';
+            moon.style.top=value*2 +'px';
+            shstars.style.top=value*-0.5 +'px';
+        })
+    </script>
+    
+</body>
+</html>          
+          
